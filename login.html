@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+
+<style>
+
+
+
+body
+{
+background-color:#1e293b;
+margin:0;
+
+
+
+}
+
+main
+{
+text-align:center;
+margin-top:30px;
+}
+
+caption
+{
+font-family:'Arial Black',sans-serif;
+text-transform:uppercase;
+margin-bottom:20px;
+font-size:26px;
+color:white;
+}
+
+label
+{
+font-family:'Verdana',Geneva, sans-serif;
+font-size:15px;
+font-weight:bold;
+color:#444;
+}
+table
+{
+background-color:white;
+margin:auto;
+padding:5px;
+width:50%;
+height:350px;
+border:2px black solid;
+box-shadow:10px 10px 10px gray;
+border-radius:20px;
+}
+
+input[type="text"],input[type="password"]
+{
+width:95%;
+border-radius:5px;
+font-family:'Courier New',Courier, monospace;
+font-size:14px;
+padding:6px;
+}
+
+
+input[type="reset"],input[type="submit"]
+{
+width:50%;
+background:gray;
+color:white;
+border-radius:5px;
+font-family:'Segoe UI',Tahoma,sans-serif;
+}
+
+
+</style>
+<body>
+
+<main>
+
+<form action="http://tataplay/user/login.php"Method="get">
+<table border="0">
+<caption>Login form</caption>
+
+
+<tr>
+<td><label for="login">Login Id</label></td>
+<td><input id="login" type="text" placeholder="type user id"></td>
+</tr>
+
+<tr>
+
+<td><label for="pass">Password</label></td>
+<td><input id="pass"type="password" placeholder="password here"></td>
+</tr>
+
+
+<tr>
+<td></td><td><input type="submit"value="login"><input type="reset"value="Reset"></td>
+</tr>
+
+</table>
+</form>
+</main>
+</body>
+</html>
