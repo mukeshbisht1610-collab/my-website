@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<title>Registration form</title>
+
+<link href="main.css" rel="stylesheet" type="text/css">
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.registration-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #4facfe;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #008cdd;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #4facfe;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .registration-form {
+        padding: 20px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+</style>
+
+<body>
+
+
+<div class="container">
+<form class="registration-form" id="registrationForm"> 
+<h2>Registration Form</h2>
+
+<div class="input-group">
+<label>First Name</label>
+<input type="text" placeholder="Enter First Name" required>
+</div>
+
+<div class="input-group">
+<label>Last Name</label>
+<input type="text" placeholder="Enter Last Name" required>
+</div>
+
+<div class="input-group">
+<label>Email Address</label>
+<input type="email" placeholder="Enter Email" required>
+</div>
+
+<div class="input-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter Phone Number" required>
+</div>
+
+<div class="input-group">
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Enter Password" required>
+</div>
+
+<div class="input-group">
+<label>Gender</label>
+<div class="radio-group">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+</div>
+</div>
+
+<div class="input-group">
+<label>Hobbies</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Running</label>
+<label><input type="checkbox"> Music</label>
+<label><input type="checkbox"> Swimming</label>
+<label><input type="checkbox"> Traveling</label>
+</div>
+</div>
+
+<div class="input-group">
+<label>Country</label>
+<select required>
+<option value="">Select Country</option>
+<option>India</option>
+<option>Russia</option>
+<option>Israel</option>
+<option>Afganistan</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Address</label>
+<textarea rows="4" placeholder="Enter Address"></textarea>
+</div>
+
+<div class="input-group">
+<label>Upload Profile Photo</label>
+<input type="file">
+</div>
+
+<button type="submit">Register</button>
+
+<p class="login-link">
+Already have an account?
+<a href="#">Login</a>
+</p>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
