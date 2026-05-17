@@ -1,0 +1,84 @@
+<!Doctype html>
+<head>
+<title>Document</title>
+</head>
+<style>
+
+@kayframes runbanner
+
+{
+10%{left:px;}
+
+20%{left:-20%;}
+30%{left:-20%;}
+
+40%{left:-40%;}
+50%{left:-40%;}
+
+60%{left:-60%;}
+70%{left:-60%;}
+
+80%{left:-80%;}
+90%{left:-80%;}
+
+}
+
+header
+{
+width:700%;
+heigh:450px;
+background:teal;
+margin-top:-7px;
+box-shadow:10px 10px 10px gray;
+}
+
+.pic
+{
+width:19%;
+height:100%;
+margin-left:-4px;
+position:relative;
+left:0px;
+animation:runbanner 12s liner infinite alternate-reverse;
+}
+
+@media only screen and (max-width:600px)
+{
+
+body{background:red;}
+header{display:none;}
+}
+
+
+/*small devices (portrait talets and large phones, 600px and up)*/
+@media only screen and (min-width:600px)
+
+{
+body{background:cyan;}
+
+hader{
+display:block;
+height:140px;}
+}
+
+/*medium devics (landscape tablets, 768px and up)
+@media only screen and (min-width:768px;)
+
+{
+head{400px;}
+}
+
+</style>
+
+<body>
+<header>
+
+<img src="images/p1.jpg" class="pic">
+<img src="images/p2.jpg" class="pic">
+<img src="images/p3.jpg" class="pic">
+<img src="images/p4.jpg" class="pic">
+<img src="images/p5.jpg" class="pic">
+<img src="images/p6.jpg" class="pic">
+</header>
+</body>
+</html>
