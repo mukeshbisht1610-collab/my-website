@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>GRADIENT</title>
+</head>
+
+   
+<style>
+header {
+text-align: center;
+background:linear-gradient(yellow,tomato);
+color: white;
+font-size: 40px;
+padding: 10px;
+text-transform: uppercase;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+margin-top: -7px;
+}
+
+body
+{
+//background: linear-gradient(yellow, red);
+margin:0;
+//min-height:100vh;
+//background:linear-gradient(to bottom, yellow 10%,green 60%);
+display:block;
+//background-image:repeating-linear-gradient(90deg, red,yellow 5%,green 12%);
+//background-image:radial-gradient(red 10%, yellow 60%, green);
+height:600px;
+//background-image:repeating-radial-gradient(red 10%, yellow 60%, green);
+height:600px;
+background-image:conic-gradient(red 110deg, yellow,green,magenta,lime,tomato,cyan);
+background-image:repeating-conic-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg);
+}
+.rotating-background
+{
+position:fixed;
+top:-100%;
+left:-100%;
+width:300%;
+height:300%;
+z-index:1;
+transform-origin:center;
+animation:spinandchange 5s linear infinite;
+}
+
+@keyframes spinandchange{
+0%
+{
+background-image:repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+transform:rotate(0deg);}
+100%
+{
+background-image:repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+transform:rotate(360deg);
+}
+}
+
+
+
+
+
+
+</style>
+<body>
+<header>Gradient In HTML</header>
+<div class="rotating-background"></div>
+</body>
+</html>
