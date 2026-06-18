@@ -1,0 +1,409 @@
+<!doctypehtml>
+<html>
+<head><title>Arena Animation GTB Nagar</title>
+
+<meta name="description" content="Arena Animation GTB Nagar - Animation, VFX, Gaming and Graphic Design courses in Delhi">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<style>
+
+*
+{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body
+{
+background:#0b0b0b;
+color:white;
+}
+
+header
+{
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(17,17,17,0.7);
+animation:slideDown 0.8s ease-out;
+}
+
+.logo img
+{
+width:150px;
+height:auto;
+display:flex;
+align-items:center;
+}
+nav a
+{
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:0.3s;
+font-weight:500;
+padding:10px 18px;
+border-radius:8px;
+display:inline-block;
+
+}
+
+nav a:hover
+{
+background:#ff2e63;
+color:white;
+box-shadow:0 0 15px #ff2e63;
+transform:scale(1.1);
+}
+
+.hero
+{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('images/a7.jpeg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+
+}
+.hero-content h1
+{
+font-size:80px;
+color:#ff2e63;
+margin-botton:20px;
+}
+
+.hero-content p
+{
+font-size:25px;
+margin-bottom:30px;
+}
+
+.hero-content a
+{
+text-decoration:none;
+background:#ff2e63;
+color:white;
+padding: 15px 35px;
+border-radius:8px;
+transition:2.3s;
+display:inline-block;
+}
+
+.hero-content a:hover
+{
+background:white;
+color:black;
+transform:scale(1.1);
+}
+
+section
+{
+padding:100px 8%;
+}
+
+.section-title
+{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#ff2e63;
+}
+
+.about
+{
+text-align:center;
+}
+
+.about p
+{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ccc;
+}
+
+.course-container
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.course-card
+{
+background:#161616;
+padding:30px;
+border-radius:15px;
+transition:0.3s;
+text-align:center;
+}
+
+.course-card:hover
+{
+transform:translateY(-10px);
+background:#ff2e63;
+box-shadow:0 0 20px #ff2e63;
+}
+
+.course-card h3
+{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.gallery
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img
+{
+width:100%;
+height:250px;
+//object-fit:cover;
+border-radius:15px;
+transition:0.5s;
+}
+
+.gallery img:hover
+{
+transform:scale(1.5);
+}
+
+.placement-container
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.place-card
+{
+background:#161616;
+padding:40px;
+text-align:center;
+border-radius:15px;
+transition:0.5s;
+}
+
+.place-card:hover
+{
+transform:translateY(-10px);
+box-shadow:0 0 20px #ff2e63;
+}
+
+.place-card h1
+{
+color:#ff2e63;
+font-size:50px;
+}
+
+
+.contact
+{
+text-align:center;
+}
+
+.contact p
+{
+font-size:18px;
+color:#ccc;
+margin:10px 0;
+}
+
+footer
+{
+background:#111;
+text-align:center;
+padding:20px;
+color:#888;
+
+}
+
+@media(max-width:900px)
+{
+body
+{
+min-width:1200px;
+overflow-x:scrool;
+}
+.course-container,
+.placement-container,
+.gallery
+{
+grid-template-columns:repeat(4,1fr);
+}
+
+nav
+{
+display:flex
+}
+.hero-content h1
+{
+font-size:70px;
+}
+section
+{
+padding:100px 8%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<header>
+<div class="logo">
+<img src=images/arena.jpeg>
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#gallery">Gallery</a>
+<a href="#placement">Placement</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1 class="animate__animated animate__fadeInUp animate__delay-1s animate__slow"> ARENA ANIMATION GTB</h1>
+
+<p>
+Leading Institute for Animation, VFX, Gaming & design
+</p>
+
+<a href="#courses">Explore courses</a>
+</div>
+
+</section>
+
+<section id="about">
+
+<h1 class="section-title">
+About Arena
+</h1>
+
+<div class="about">
+
+<p>
+Arena Animation GTB Nagar is one of the leading institutes for Animation,
+VFX, Gaming, Graphic Design and Multimedia education.
+We help student build creative careers through industry-focused training and real-world projects.
+</p>
+</div>
+</section>
+
+<secton id="courses">
+<h1 class="section-title">
+Our Courses
+</h1>
+
+<div class="course-container">
+<div class="course-card">
+
+<h3>Animation</h3>
+
+<p>
+Learn 2D & 3D animation with industry tools.
+</P>
+</div>
+
+<div class="course-card">
+<h3> VFX </h3>
+<p>
+Create cinematic visual effects and compositing.
+</p>
+</div>
+
+<div class="course-card">
+<h3> Graphic Design</h3>
+<p>
+Master Photoshop, Illustrator & branding.
+</p>
+</div>
+
+<div class="course-card">
+<h3> Gaming</h3>
+<p>
+Design exciting games and environments.
+</P>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h1 class="section-title"> Student Showcase</h1>
+<div class="gallery">
+
+<img src="images/a1.jfif">
+<img src="images/a2.jfif">
+<img src="images/a3.jfif">
+<img src="images/a4.jfif">
+<img src="images/a5.jfif">
+<img src="images/a6.jfif">
+</div>
+</section>
+
+<section id="placement">
+<h1 class="section-title">Placement</h1>
+
+<div class="placement-container">
+
+<div class="place-card">
+<h1>500+</h1>
+<p> Student Trained</p>
+</div>
+
+<div class="place-card">
+<h1>100+</h1>
+<p>Placement</p>
+</div>
+
+<div class="place-card">
+<h1>50+</h1>
+<p>Projects</p>
+</div>
+
+<div class="place-card">
+<h1>10+</h1>
+<p>Years Experience</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h1 class="section-title">Contact Us</h1>
+<div class="contact">
+<p>📍GTB Nagar, Delhi</p>
+<p>📞+91******85</p>
+<p>📧 arenaanimation@gmail.com</p>
+</div>
+</section>
+
+<footer>
+<p> @2026 Arena Animation GTB Nagar| All Roghts Reserved</p>
+</footer>
+
+
+</body>
+</html>
