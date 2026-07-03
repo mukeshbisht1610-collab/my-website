@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Design</title>
+   
+</head>
+
+<style>
+
+#pic
+
+{
+
+width:200px;
+height:200px;
+box-shadow:10px 10px 10px tomato;
+border-radius:8px;
+}
+
+body
+{
+background-color: lightyellow;
+
+}
+</style>
+<body>
+
+<h1>Working with javascript</h1>
+
+<img id="pic"src="images/p4.jpg">
+
+<h2>About programing</h2>
+<p>
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+</p>
+  
+<script>
+
+var p = document.getElementById("pic")
+var h = document.getElementsByTagName("h1")
+h[0].onmouseover = function()
+
+{
+this.style.color="red"
+this.style.transition="1s"
+this.style.cursor="pointer"
+this.style.marginLeft="300px";
+this.style.transform="scale(1.50)"
+}
+
+h[0].onmouseout = function()
+{
+
+this.style.color="black"
+this.style.transform="scale(1)"
+this.style.marginLeft="0px";
+
+}
+
+p.onclick=function()
+
+{
+
+p.src="images/p5.jpg"
+this.style.cursor="pointer"
+document.body.style.background = "lightblue";
+}
+</script>  
+</body>
+</html>
