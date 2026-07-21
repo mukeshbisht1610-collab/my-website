@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+<style>
+
+body
+{
+margin: 0;
+padding: 0;
+background: tomato;
+text-align:center;
+}
+.pic
+{
+    width: 25%;
+    height: 400px;
+    box-shadow: 10px 10px 10px;
+    margin: 3%;
+    cursor:progress;
+    transition: 1s;
+}
+
+.pic:hover
+{
+animation: animate__fadeIn
+animation-duration: 0.50s;
+
+}
+h1
+
+{
+color:white;
+font-size: 40px;
+font-family:arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:3px;
+margin:20px;
+text-shadow:2px 2px 2px black;
+</style>
+<body>
+
+    <h1>Displaying Images Using Loop</h1>
+<script>
+for (var i = 1;i<=10;i++)
+
+{
+var p = document.createElement("img")
+document.body.appendChild(p)
+p.src="images/p"+i+".jpg"
+p.className="pic"
+
+}    
+</script>
+
+</body>
+
+</html>
