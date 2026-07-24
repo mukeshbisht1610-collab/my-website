@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.mystyle
+{
+width:60px;
+height:60px;
+border-radius:100px;
+box-shadow:3px 3px 3px gray;
+cursor:pointer;
+border:none;
+text-align:center;
+font-size:16px
+}
+
+h1
+{
+color:darkblue;
+font-family:arial,sans-serif;
+font-size:30px;
+text-transform:capitalize;
+//letter-spacing:2px;
+background:lightblue;
+display:inline-block;
+text-shadow:2px 2px 2px gray;
+}
+
+</style>
+
+ <body>
+<h1>
+while loop button generator
+</h1>
+<br><br>
+<script>
+var a = 1
+var c =1
+var r,g,b,mycolor;
+
+while(a<=50)
+{
+r = Math.round(Math.random()*255);
+g = Math.round(Math.random()*255);
+b = Math.round(Math.random()*255);
+mycolor ="rgb("+r+","+g+","+b+")"
+
+document.write("<button style='background:"+mycolor+"' class='mystyle' onclick='show(this)'>"+a+"</button>")
+a++;
+
+if(c<=5)
+{
+c++;
+}
+else
+{
+document.write("<br>")
+c=1;
+}
+function show(t)
+{
+document.body.style.background=t.style.background
+}
+
+}
+
+</script>
+
+
+</body>
+
+</html>
