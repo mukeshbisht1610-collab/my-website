@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+   <!--<h1>Keyboard Event in Js</h1>-->
+  
+    <img  id="bird" src="images/bird.gif">
+
+    <style>
+
+        body
+        {
+            background:rgb(0, 174, 255);
+        }
+        #bird
+        {
+            width:20%;
+            position:absolute;
+            left:0px;
+            top:0px;
+        }
+    </style>
+
+<script>
+var bird = document.getElementById("bird")
+var L = 0
+function f1 (e)
+{
+var a = e.key
+switch(a)
+{
+    case "ArrowRight":
+
+    if(L<window.innerWidth-350)
+{
+    L=L+10
+}
+else
+{
+    L= -200
+}
+
+
+    case "ArrowLeft":a
+
+{
+    bird.style.rotate="0deg"
+}
+bird.style.left=L+"px"
+document.title=L
+break;
+}
+}
+document.addEventListener("keydown", f1);
+</script>
+</body>
+</html>
