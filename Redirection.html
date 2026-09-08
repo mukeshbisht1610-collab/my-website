@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body
+{
+background-color:cyan;
+color:red;
+}
+
+
+
+</style>
+<body onload="sh()">
+    
+<div id="mes">
+
+<h1> Sorry this page or website is under construction or maintainence</h1>
+
+<h2> Soon we will be available.......
+    Please bear with us
+</h2>
+
+</div>
+
+<script>
+    var m=document.getElementById("mes")
+
+    function blink()
+    {
+      if(m.style.opacity=="0")
+      {
+        m.style.opacity="1"
+      }
+
+      else
+      {
+        m.style.opacity="0"
+      }
+
+      setTimeout("blink()",1000)
+    }
+
+    function sh()
+    {
+        blink()
+    }
+
+     setInterval("location.href='https://mukeshbisht1610-collab.github.io/AOTM/'",10000)
+     
+</script>
+
+</body>
+</html>
