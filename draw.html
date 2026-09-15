@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>draw.html</title>
+</head>
+
+<style>
+
+body
+{
+  text-align:center;
+  color:rebeccapurple;
+}
+
+</style>
+<body>
+
+  <h1>DRAW WITH CANVAS</h1>
+  
+  <canvas id="mycan" width="500" height="500" style="border:1px black solid"></canvas>
+
+
+
+  <script>
+    var my = document.getElementById("mycan");
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    my.width = w;
+    my.height = h;
+
+    var c = my.getContext("2d");
+
+   
+    c.fillStyle = "brown";
+   
+    c.fillRect(495, 420, 40, 150); 
+
+    c.fillStyle = "green";
+
+  
+    c.beginPath();
+    c.arc(500, 380, 80, 0, 2 * Math.PI);
+    c.fill();
+
+
+    c.beginPath();
+    c.arc(475, 365, 80, 0, 2 * Math.PI);
+    c.fill();
+
+  
+    c.beginPath();
+    c.arc(535, 365, 80, 0, 2 * Math.PI);
+    c.fill();
+
+  </script>
+</body>
+</html>
